@@ -16,15 +16,15 @@ const Navbar = () => {
             </NavLink>
 
             <ul className='flex flex-col md:flex-wrap lg:flex-row gap-8 font-medium text-center lg:text-left'>
-                <NavLink to='/' className={({isActive}) => isActive && 'font-semibold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent underline decoration-[#9F62F2]'}>
+                <NavLink to='/' className={({isActive}) => `relative ${isActive && 'font-semibold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent after:block after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-gradient-to-r after:from-[#632EE3] after:to-[#9F62F2]'}`}>
                    <li>Home</li>
                 </NavLink>
 
-               <NavLink to='/Apps' className={({isActive}) => isActive && 'font-semibold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent underline decoration-[#9F62F2]'}>
+               <NavLink to='/Apps' className={({isActive}) => `relative ${isActive && 'font-semibold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent after:block after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-gradient-to-r after:from-[#632EE3] after:to-[#9F62F2]'}`}>
                    <li>Apps</li>
                </NavLink>
 
-               <NavLink to='/My-Installation' className={({isActive}) => isActive && 'font-semibold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent underline decoration-[#9F62F2]'}>
+               <NavLink to='/My-Installation' className={({isActive}) => `relative ${isActive && 'font-semibold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent after:block after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-gradient-to-r after:from-[#632EE3] after:to-[#9F62F2]'}`}>
                 <li>Installation</li>
                 </NavLink>
             </ul>
