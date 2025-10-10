@@ -2,12 +2,12 @@ import logo from '../../assets/logo.png'
 import gitHubLogo from '../../assets/fi_2111432.png'
 import { NavLink } from 'react-router';
 
-const Navbar = ({link, setLink}) => {
+const Navbar = () => {
 
     return (
         <div>
         <div className='flex flex-col md:flex-row py-[17.5px] px-20 justify-center md:justify-between items-center gap-8 md:gap-0'>
-            <NavLink to='/' onClick={() => setLink('Home')}>
+            <NavLink to='/'>
             <div className='flex gap-1 items-center'>
                 <img className='max-w-10 max-h-10' src={logo} alt="" />
 
@@ -15,17 +15,17 @@ const Navbar = ({link, setLink}) => {
             </div>
             </NavLink>
 
-            <ul className='flex flex-col md:flex-col lg:flex-row gap-8 font-medium text-center md:text-center lg:text-left'>
-                <NavLink to='/' onClick={() => setLink('Home')}>
-                   <li className={link === 'Home' ? 'font-semibold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent underline decoration-[#9F62F2]' : ''}>Home</li>
+            <ul className='flex flex-col md:flex-wrap lg:flex-row gap-8 font-medium text-center lg:text-left'>
+                <NavLink to='/' className={({isActive}) => isActive && 'font-semibold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent underline decoration-[#9F62F2]'}>
+                   <li>Home</li>
                 </NavLink>
 
-               <NavLink to='/Apps' onClick={() => setLink('Apps')}>
-                   <li className={link === 'Apps' ? 'font-semibold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent underline decoration-[#9F62F2]' : ''}>Apps</li>
+               <NavLink to='/Apps' className={({isActive}) => isActive && 'font-semibold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent underline decoration-[#9F62F2]'}>
+                   <li>Apps</li>
                </NavLink>
 
-               <NavLink to='/My-Installation' onClick={() => setLink('Installation')}>
-                <li className={link === 'Installation' ? 'font-semibold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent underline decoration-[#9F62F2]' : ''}>Installation</li>
+               <NavLink to='/My-Installation' className={({isActive}) => isActive && 'font-semibold bg-gradient-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent underline decoration-[#9F62F2]'}>
+                <li>Installation</li>
                 </NavLink>
             </ul>
 

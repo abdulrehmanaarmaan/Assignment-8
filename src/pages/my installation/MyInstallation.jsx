@@ -1,5 +1,5 @@
 import { useLoaderData } from 'react-router';
-import { getInstalledApps } from '../../utility/localStorage';
+import { getInstalledApps } from '../../utility/local-storage';
 import InstalledApp from '../installed app/InstalledApp';
 import { useEffect } from 'react';
 import { useState } from 'react';

@@ -4,7 +4,7 @@ import downloadLogo from '../../assets/icon-downloads.png'
 import ratingLogo from '../../assets/icon-ratings.png'
 import reviewLogo from '../../assets/Vector (1).png'
 import { toast } from 'react-toastify';
-import {getInstalledApps, setInstalledApps } from '../../utility/localStorage';
+import {getInstalledApps, setInstalledApps } from '../../utility/local-storage';
 import AppChart from './app chart/AppChart';
 
 const AppDetails = () => {
@@ -26,7 +26,7 @@ const AppDetails = () => {
         setInstalled(true)
 
         if (!installedApps.includes(id)) {
-            toast('Installed')
+            toast(`${title} Installed Successfully`)
         }
 
         setInstalledApps(id)

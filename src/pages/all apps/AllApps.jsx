@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect, useState } from 'react';
+import React, { Suspense, useState } from 'react';
 import { useLoaderData } from 'react-router';
 import TopApp from '../../components/top app/TopApp';
 import App from '../app/App';
@@ -48,7 +48,7 @@ const Apps = () => {
                 </label>
             </div>
 
-            {loading ? (<div className='flex justify-center mt-auto'><TailSpin visible={true} height="80" width="80" color="#4fa94d" ariaLabel="tail-spin-loading" radius="1" wrapperStyle={{}} wrapperClass=""></TailSpin></div>) : priorApps.length === 0 ? (<NoAppFound setSearch={setSearch}></NoAppFound>) : (<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-full md:max-w-[1440px] mx-auto px-4'>
+            {loading ? (<div className='flex justify-center min-h-screen'><TailSpin visible={true} height="80" width="80" color="#4fa94d" ariaLabel="tail-spin-loading" radius="1" wrapperStyle={{}} wrapperClass=""></TailSpin></div>) : priorApps.length === 0 ? (<NoAppFound setSearch={setSearch}></NoAppFound>) : (<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-full md:max-w-[1440px] mx-auto px-4'>
                 <Suspense fallback={<span>Loading...</span>}>
                     {
                         priorApps.map(app => <App app={app} key={app.id}></App>)

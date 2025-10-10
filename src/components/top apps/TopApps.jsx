@@ -2,7 +2,7 @@ import React, { Suspense } from 'react';
 import TopApp from '../top app/TopApp';
 import { NavLink } from 'react-router';
 
-const TopPages = ({setLink, appData}) => {
+const TopPages = ({appData}) => {
 
     const topApps = appData.slice(0, 8);
 
@@ -21,8 +21,7 @@ const TopPages = ({setLink, appData}) => {
             </div>
 
         <NavLink to='/Apps'>
-            <button onClick={() => setLink('Apps')} className='bg-gradient-to-r from-[#632EE3]
-            to-[#9F62F2] rounded-sm text-white font-semibold py-4 px-[39px] hover:cursor-pointer'>Show All</button>
+            <button className='bg-gradient-to-r from-[#632EE3] to-[#9F62F2] rounded-sm text-white font-semibold py-[14.5px] px-[39px] hover:cursor-pointer'>Show All</button>
         </NavLink>
         </div>
     );

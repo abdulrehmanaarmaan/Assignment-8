@@ -1,7 +1,7 @@
 import React from 'react';
 import downloadLogo from '../../assets/icon-downloads.png'
 import ratingsLogo from '../../assets/icon-ratings.png'
-import { removeInstalledApp } from '../../utility/localStorage';
+import { removeInstalledApp } from '../../utility/local-storage';
 import { toast } from 'react-toastify';
 
 const InstalledApp = ({setInstalledApps, downloadedApps, installedApp}) => {
@@ -10,7 +10,7 @@ const InstalledApp = ({setInstalledApps, downloadedApps, installedApp}) => {
     const uninstallApp = id => {
         removeInstalledApp(id)
 
-        toast('Uninstalled')
+        toast(`${title} uninstalled from your device`)
 
         const filteredApps = downloadedApps.filter(downloadedApp => downloadedApp.id !== id);
         setInstalledApps(filteredApps)
