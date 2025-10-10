@@ -16,22 +16,22 @@ export const router = createBrowserRouter([
         index: true,
         path: '/',
         Component: Home,
-        loader: () => fetch('../../public/appData.json').then(res => res.json())
+        loader: () => fetch('../appData.json').then(res => res.json())
       },
       {
         path: '/Apps',
         Component: Apps,
-        loader: () => fetch('../../public/appData.json').then(res => res.json())
+        loader: () => fetch('../appData.json').then(res => res.json())
       },
       {
         path: '/App-Details/:appId',
         Component: AppDetails,
-        loader: () => fetch('../../public/appData.json').then(res => res.json())
+        loader: () => fetch('../appData.json').then(res => res.json())
       },
       {
         path: '/My-Installation',
         Component: MyInstallation,
-        loader: () => fetch('../../public/appData.json').then(res => res.json())
+        loader: () => fetch('../appData.json').then(res => res.json())
       }
     ]
   },

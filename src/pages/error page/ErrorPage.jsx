@@ -12,12 +12,12 @@ const ErrorPage = () => {
     }
 
     return (
-        <div className='flex flex-col'>
+        <div>
 
             <Navbar></Navbar>
 
-            <div className='bg-gray-100 py-20 text-center'>
-                <img className='mx-auto mb-[65.62px]' src={errorLogo} alt="" />
+            <div className='bg-gray-100 py-20 text-center min-h-screen'>
+                <img className='mx-auto mt-0 lg:mt-[55.35px] mb-[65.62px]' src={errorLogo} alt="" />
 
                 <h1 className='text-5xl font-semibold text-[#001931]'>Oops, page not found!</h1>
 

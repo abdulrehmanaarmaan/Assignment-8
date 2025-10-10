@@ -17,14 +17,14 @@ const InstalledApp = ({setInstalledApps, downloadedApps, installedApp}) => {
     }
 
     return (
-        <div className='flex bg-white rounded-sm p-4 justify-between items-center max-w-[1440px] mx-auto'>
-            <div className='flex gap-4 items-center'>
-                <img className='rounded-lg max-w-20' src={image} alt="" />
+        <div className='flex flex-col md:flex-row bg-white rounded-sm p-4 justify-center md:justify-between items-center mx-auto'>
+            <div className='flex flex-col md:flex-row gap-4 items-center'>
+                <img className='rounded-lg max-w-full w-full h-full md:max-w-20 md:max-h-20 md:h-20 object-cover' src={image} alt="" />
 
                 <div>
-                    <h1 className='font-medium text-xl text-[#001931] mb-4 text-left'>{title}</h1>
+                    <h1 className='font-medium text-xl text-[#001931] mb-4 text-center md:text-left'>{title}</h1>
 
-                    <div className='flex gap-4'>
+                    <div className='flex gap-7 md:gap-4'>
                         <div className='flex items-center gap-1'>
                             <span className='flex max-h-4 max-w-4 items-center'>
                                 <img className='w-full h-full' src={downloadLogo} alt="" />
@@ -46,7 +46,7 @@ const InstalledApp = ({setInstalledApps, downloadedApps, installedApp}) => {
                 </div>
             </div>
 
-            <button onClick={() => uninstallApp(id)} className='font-semibold text-white py-3 px-4 rounded-sm bg-[#00D390] max-h-[43px] hover: cursor-pointer'>Uninstall</button>
+            <button onClick={() => uninstallApp(id)} className='font-semibold text-white py-3 px-4 rounded-sm bg-[#00D390] max-h-[43px] hover: cursor-pointer mt-4 md:mt-0'>Uninstall</button>
         </div>
     );
 };

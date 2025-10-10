@@ -3,6 +3,7 @@ import { getInstalledApps } from '../../utility/localStorage';
 import InstalledApp from '../installed app/InstalledApp';
 import { useEffect } from 'react';
 import { useState } from 'react';
+import { IoMdArrowDropdown } from 'react-icons/io';
 
 const MyInstallation = () => {
     const apps = useLoaderData();
@@ -41,19 +42,19 @@ const MyInstallation = () => {
 
             <p className='font-normal text-xl text-[#627382] mt-4 mb-10'>Explore All Trending Apps on the Market developed by us</p>
 
-            <div className='flex justify-between mb-4 px-20'>
+            <div className='flex flex-col md:flex-row justify-between mb-4 px-0 md:px-20 items-center gap-4 md:gap-0'>
                 <h1 className='text-2xl font-semibold text-[#001931]'>{downloadedApps.length} {downloadedApps.length < 2 ? 'App Found' : 'Apps Found'}</h1>
 
                 <details className="dropdown">
-                    <summary className="btn m-1 text-[#627382] font-normal">Sort By Downloads</summary>
+                    <summary className="btn m-1 text-[#627382] font-normal">Sort By Downloads <IoMdArrowDropdown className='max-w-7.5 w-7.5 h-7.5 max-h-7.5'></IoMdArrowDropdown></summary>
                     <ul className="menu dropdown-content bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-                        <li onClick={() => sortApps('High-Low')}><a>High-Low</a></li>
-                        <li onClick={() => sortApps('Low-High')}><a>Low-High</a></li>
+                        <li onClick={() => sortApps('High-Low')}><a className='mx-auto md:mx-0'>High-Low</a></li>
+                        <li onClick={() => sortApps('Low-High')}><a className='mx-auto md:mx-0'>Low-High</a></li>
                     </ul>
                 </details>
             </div>
 
-            <div className='space-y-4'>
+            <div className='space-y-4 px-4 md:px-20'>
                 {
                     downloadedApps.map(installedApp => <InstalledApp setInstalledApps={setInstalledApps} downloadedApps={downloadedApps} installedApp={installedApp} key={installedApp.id}></InstalledApp>)
                 }
