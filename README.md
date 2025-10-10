@@ -4,6 +4,4 @@ Description: Hero Apps is a React-based web application that allows users to exp
 
 Technologies: React.js, React Router, Tailwind CSS, Daisy UI, React Loader Spinner, React Icons, Local Storage API, Recharts
 
-<!--  -->
-
 
