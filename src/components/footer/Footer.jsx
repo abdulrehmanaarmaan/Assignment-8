@@ -7,7 +7,7 @@ import facebookLogo from '../../assets/fi_5968764 (1).png'
 const Footer = () => {
     return (
         <div className='text-white bg-[#001931] pt-[35px] pb-8 md:pb-7.5 px-0 md:px-20 text-center mt-auto'>
-            <div className='flex flex-col md:flex-row justify-between pr-0 md:pr-0 lg:pr-[107px] gap-8 md:gap-0'>
+            <div className='flex flex-col md:flex-row justify-between gap-8 md:gap-0 pr-0 lg:pr-[107px] md:items-start'>
                 <div className='flex gap-1 items-center mx-auto md:mx-0'>
                     <img className='max-w-10 max-h-10' src={appLogo} alt="" />
 
