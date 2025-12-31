@@ -1,16 +1,16 @@
-## App Name
+### App Name
 Hero Apps
 
-## Description
+### Description
 Hero Apps is a React-based web application that allows users to explore a variety of applications, view detailed information about each one and install them with a single click. It's designed with a clean, gradient-based UI and smooth navigation transitions to deliver an app-store-like experience right inside the browser.
 
-## Live URL
+### Live URL
 https://verdant-stroopwafel-0c1cde.netlify.app
 
-## Screenshot
+### Screenshot
 <img width="900" alt="image" src="https://github.com/user-attachments/assets/c2171d4d-6bdd-4e55-84c9-2a3bd830e379" />
 
-## Technologies
+### Technologies
 
 -React.js
 
@@ -28,16 +28,16 @@ https://verdant-stroopwafel-0c1cde.netlify.app
 
 -Recharts
 
-## Setup Instructions
+### Setup Instructions
 1. Clone the repository.
 2. Install dependencies using npm install.
 3. Start the development server using npm run dev.
 
-## Run The Project
+### Run The Project
 
 npm run dev
 
-## Clone the repositories
+### Clone the repositories
 - https://github.com/abdulrehmanaarmaan/Assignment-8
 
 
