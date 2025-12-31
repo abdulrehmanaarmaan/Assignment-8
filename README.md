@@ -51,7 +51,7 @@ https://verdant-stroopwafel-0c1cde.netlify.app
 
 npm run dev
 
-### Clone The Repositories
+### Clone The Repository
 - https://github.com/abdulrehmanaarmaan/Assignment-8
 
 
