@@ -28,6 +28,20 @@ https://verdant-stroopwafel-0c1cde.netlify.app
 
 -Recharts
 
+### npm Packages Used 
+
+-react
+
+-react-dom
+
+-react-toastify
+
+-react-icons
+
+-recharts
+
+-tailwindcss
+
 ### Setup Instructions
 1. Clone the repository.
 2. Install dependencies using npm install.
