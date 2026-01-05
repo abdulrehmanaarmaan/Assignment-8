@@ -11,7 +11,7 @@ const Apps = () => {
     const [search, setSearch] = useState('');
     const [loading, setLoading] = useState(false);
     const searchedApp = search.trim().toLowerCase();
-    const priorApps = searchedApp ? apps.filter(app => app.title.toLowerCase().includes(searchedApp)) : apps 
+    const priorApps = searchedApp ? apps.filter(app => app.title.toLowerCase().includes(searchedApp)) : apps
 
     const handleChange = (e) => {
         setSearch(e.target.value);
@@ -31,20 +31,20 @@ const Apps = () => {
             <div className='flex flex-col md:flex-row justify-between px-0 md:px-4 lg:px-20 items-center mb-4'>
                 <h1 className='font-semibold text-2xl text-[#001931] mb-4 md:mb-0'>({priorApps.length}) {priorApps.length > 1 ? 'Apps Found' : 'App Found'}</h1>
 
-                 <label className="input w-11/12 md:w-auto">
-                     <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                     <g
-                     strokeLinejoin="round"
-                     strokeLinecap="round"
-                     strokeWidth="2.5"
-                     fill="none"
-                     stroke="currentColor"
-                      >
-                    <circle cx="11" cy="11" r="8"></circle>
-                    <path d="m21 21-4.3-4.3"></path>
-                     </g>
-                     </svg>
-                     <input value={search} onChange={handleChange} type="search" required placeholder="search Apps" />
+                <label className="input w-11/12 md:w-auto">
+                    <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <g
+                            strokeLinejoin="round"
+                            strokeLinecap="round"
+                            strokeWidth="2.5"
+                            fill="none"
+                            stroke="currentColor"
+                        >
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.3-4.3"></path>
+                        </g>
+                    </svg>
+                    <input value={search} onChange={handleChange} type="search" required placeholder="search Apps" />
                 </label>
             </div>
 
@@ -54,9 +54,8 @@ const Apps = () => {
                         priorApps.map(app => <App app={app} key={app.id}></App>)
                     }
                 </Suspense>
-            </div>)
-            }
-            
+            </div>)}
+
         </div>
     );
 };
