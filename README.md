@@ -52,6 +52,6 @@ https://verdant-stroopwafel-0c1cde.netlify.app
 npm run dev
 
 ### Clone The Repository
-- https://github.com/abdulrehmanaarmaan/Assignment-8
+- https://github.com/abdulrehmanaarmaan/hero-apps.git
 
 
