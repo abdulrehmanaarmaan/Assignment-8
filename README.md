@@ -8,7 +8,7 @@ Hero Apps is a React-based web application that allows users to explore a variet
 https://verdant-stroopwafel-0c1cde.netlify.app
 
 ### Screenshot
-<img width="900" alt="image" src="https://github.com/user-attachments/assets/c2171d4d-6bdd-4e55-84c9-2a3bd830e379" />
+<img width="900" alt="Screenshot 2025-12-31 190633" src="https://github.com/user-attachments/assets/62203a0e-ebd7-43c8-8b52-edb8b74f6c36" />
 
 ### Technologies
 
